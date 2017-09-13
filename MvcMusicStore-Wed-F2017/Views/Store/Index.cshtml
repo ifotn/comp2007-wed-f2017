@@ -5,3 +5,9 @@
 <h2>Welcome to the Music Store</h2>
 
 <h3>@ViewBag.Message</h3>
+
+<ul>
+    <li>@Html.ActionLink("Rock", "Browse", "Store", new { genre = "Rock" })</li>
+    <li>@Html.ActionLink("Jazz", "Browse", "Store", new { genre = "Jazz" })</li>
+    <li>@Html.ActionLink("Blues", "Browse", "Store", new { genre = "Blues" })</li>
+</ul>

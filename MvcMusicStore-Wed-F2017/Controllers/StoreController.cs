@@ -14,5 +14,13 @@ namespace MvcMusicStore_Wed_F2017.Controllers
             ViewBag.Message = "Please select a Genre";
             return View();
         }
+
+        // GET: Store/Browse
+        public ActionResult Browse(string genre) {
+
+            // Send genre back to the View
+            ViewBag.Genre = genre;
+            return View();
+        }
     }
 }
